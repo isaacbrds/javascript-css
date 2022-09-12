@@ -9,7 +9,11 @@
 </head>
 <body>
 <div id="app">
-    <h1 v-for="lista in listas">{{ lista.nome }}</h1>
+    <p>Digite algo para ser Exibido</p>
+    <input type="text" placeholder="digite algo..." v-model="conteudo">
+    <p>
+        {{conteudo}}
+    </p>
 </div>
 
 <script src="./assets/js/vue.js"></script>
@@ -29,7 +33,10 @@
                     nome: 'Marcos Valério',
                     idioma: 'PT-BR'
                 }
-            ]
+            ],
+            verifica: true,
+            numero: 2,
+            conteudo: ''
         }
     });
 </script>

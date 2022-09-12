@@ -9,7 +9,7 @@
 </head>
 <body>
 <div id="app">
-    <h1 v-for="lista in listas">{{ lista.nome }}</h1>
+    <button v-on:click="exibeAlerta">Clique aqui</button>
 </div>
 
 <script src="./assets/js/vue.js"></script>
@@ -29,7 +29,12 @@
                     nome: 'Marcos Valério',
                     idioma: 'PT-BR'
                 }
-            ]
+            ],
+        },
+        methods:{
+            exibeAlerta: function(){
+                alert('Clicado')
+            }
         }
     });
 </script>

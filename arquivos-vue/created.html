@@ -9,7 +9,7 @@
 </head>
 <body>
 <div id="app">
-    <h1 v-for="lista in listas">{{ lista.nome }}</h1>
+   
 </div>
 
 <script src="./assets/js/vue.js"></script>
@@ -18,18 +18,14 @@
         el: '#app',
         data: {
             mensagem: 'Olá Vue.js!',
-            listas: [ 
-                {
-                    id: 1,
-                    nome: 'Isaac Brigido',
-                    idioma: 'PT-BR'
-                },
-                {
-                    id: 2,
-                    nome: 'Marcos Valério',
-                    idioma: 'PT-BR'
-                }
-            ]
+        },
+        methods:{
+            onLoadPage: function(){
+                alert(this.mensagem)
+            }
+        },
+        created(){
+            this.onLoadPage()
         }
     });
 </script>

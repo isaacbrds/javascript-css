@@ -9,7 +9,9 @@
 </head>
 <body>
 <div id="app">
-    <h1 v-for="lista in listas">{{ lista.nome }}</h1>
+    <h1 v-if="numero > 4">O número é maior {{ numero }}</h1>
+    <h1 v-else-if="numero === 4">O número é igual a {{numero}}</h1>
+    <h1 v-else>O número é menor do que 4</h1>
 </div>
 
 <script src="./assets/js/vue.js"></script>
@@ -29,7 +31,9 @@
                     nome: 'Marcos Valério',
                     idioma: 'PT-BR'
                 }
-            ]
+            ],
+            verifica: true,
+            numero: 2
         }
     });
 </script>

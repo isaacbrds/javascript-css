@@ -9,7 +9,9 @@
 </head>
 <body>
 <div id="app">
-    <h1 v-for="lista in listas">{{ lista.nome }}</h1>
+    <ul v-for="lista in listas">
+        <li>{{lista.nome}}</li>
+    </ul>
 </div>
 
 <script src="./assets/js/vue.js"></script>
@@ -29,7 +31,7 @@
                     nome: 'Marcos Valério',
                     idioma: 'PT-BR'
                 }
-            ]
+            ],
         }
     });
 </script>
