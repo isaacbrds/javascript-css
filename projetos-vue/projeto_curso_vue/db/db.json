@@ -122,6 +122,27 @@
       ],
       "status": "Solicitado",
       "id": 6
+    },
+    {
+      "nome": "Juca",
+      "carne": "Picanha",
+      "pao": "Parmesão e Orégano",
+      "opcionais": [
+        "Bacon"
+      ],
+      "status": "Solicitado",
+      "id": 7
+    },
+    {
+      "nome": "Paulo",
+      "carne": "Veggie burger",
+      "pao": "Parmesão e Orégano",
+      "opcionais": [
+        "Tomate",
+        "Pepino"
+      ],
+      "status": "Solicitado",
+      "id": 8
     }
   ]
 }
